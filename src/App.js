@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import CardContainer from './components/img-card/CardContainer';
+import ConfirmationModal from './components/modals/ConfirmationModal';
+import FormModal from './components/modals/FormModal';
+import ImageUploadModal from './components/modals/ImageUploadModal';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container p-0">
+      <Navbar/>
+      <CardContainer/>
+      <FormModal/>
+      <ConfirmationModal/>
+      <ImageUploadModal/>
     </div>
   );
 }
